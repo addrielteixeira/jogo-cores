@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo das Cores - Neon Edition</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-wrapper">
+
+        <h1 class="title">
+            🎨 Adivinhe a <span>Cor Secreta</span>
+        </h1>
+
+        <p class="subtitle">
+            Tente descobrir qual cor o sistema escolheu!
+        </p>
+
+        <div class="panel">
+            <p id="attempts-display">Tentativas: <span id="attempts-count">3</span></p>
+
+            <input type="text" id="color-input" placeholder="Digite a cor..." autocomplete="off">
+
+            <button id="guess-btn" class="btn primary">Adivinhar</button>
+
+            <p id="feedback-message" class="feedback"></p>
+
+            <button id="restart-btn" class="btn secondary" style="display: none;">
+                Jogar Novamente
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
